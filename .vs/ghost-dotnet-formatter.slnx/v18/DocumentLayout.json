@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E555ACA5-F86A-B6E1-974F-7D1CCC7A66D8}|..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\csharp\\csharpdocvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88427BEF-3FF4-6AE5-DBD5-B24F6A078699}|..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\ghostformatter.vsix\\ghostformatterextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88427BEF-3FF4-6AE5-DBD5-B24F6A078699}|..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\ghostformatter.vsix\\services\\vsformattingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88427BEF-3FF4-6AE5-DBD5-B24F6A078699}|..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\ghostformatter.vsix\\services\\formatonsavehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +47,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cde3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormatOnSaveHandler.cs",
+              "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\FormatOnSaveHandler.cs",
+              "RelativeDocumentMoniker": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\FormatOnSaveHandler.cs",
+              "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\FormatOnSaveHandler.cs",
+              "RelativeToolTip": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\FormatOnSaveHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T16:18:27.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VsFormattingService.cs",
+              "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\VsFormattingService.cs",
+              "RelativeDocumentMoniker": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\VsFormattingService.cs",
+              "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\VsFormattingService.cs",
+              "RelativeToolTip": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Services\\VsFormattingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T16:18:30.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GhostFormatterExtension.cs",
+              "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatterExtension.cs",
+              "RelativeDocumentMoniker": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatterExtension.cs",
+              "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatterExtension.cs",
+              "RelativeToolTip": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\GhostFormatterExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T16:18:30.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CSharpDocVisitor.cs",
+              "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpDocVisitor.cs",
+              "RelativeDocumentMoniker": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpDocVisitor.cs",
+              "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpDocVisitor.cs",
+              "RelativeToolTip": "..\\ghost-dotnet-formatter-fixed\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpDocVisitor.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAgwBYBAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-09T16:18:59.184Z",
+              "EditorCaption": ""
             }
           ]
         }

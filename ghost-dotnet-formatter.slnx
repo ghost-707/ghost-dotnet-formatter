@@ -1,2 +1,7 @@
 <Solution>
+  <Project Path="../ghost-dotnet-formatter-fixed/ghost-dotnet-formatter/src/GhostFormatter.Core/GhostFormatter.Core.csproj" />
+  <Project Path="../ghost-dotnet-formatter-fixed/ghost-dotnet-formatter/src/GhostFormatter.Vsix/GhostFormatter.Vsix.csproj">
+    <Deploy />
+  </Project>
+  <Project Path="src/GhostFormatter.Abstractions/GhostFormatter.Abstractions.csproj" />
 </Solution>
