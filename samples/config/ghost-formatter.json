@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ghost.software/schemas/ghost-formatter/v1.json",
+  "indentSize": 4,
+  "useTabs": false,
+  "maxLineLength": 120,
+  "braceStyle": "allman",
+  "lineEnding": "lf",
+  "maxConsecutiveBlankLines": 1,
+  "insertFinalNewline": true,
+  "trimTrailingWhitespace": true,
+  "sortUsings": true,
+  "systemUsingsFirst": true,
+  "separateUsingGroups": false,
+  "sortImports": true,
+  "namespaceStyle": "fileScoped",
+  "newlineBeforeBrace": true,
+  "newlineAfterAttributes": true,
+  "trailingCommas": "none",
+  "csharp": {
+    "preferExpressionBodies": false,
+    "blankLineBetweenMembers": true,
+    "preserveRegions": true,
+    "indentSwitchCaseLabels": true,
+    "wrapLinqChains": true
+  },
+  "json": {
+    "alignValues": false,
+    "sortProperties": false
+  },
+  "sql": {
+    "uppercaseKeywords": true,
+    "oneColumnPerLine": true,
+    "commaPlacement": "trailing"
+  },
+  "html": {
+    "wrapAttributesThreshold": 3,
+    "selfClosingVoidElements": false
+  }
+}
