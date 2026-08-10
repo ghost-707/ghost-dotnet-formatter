@@ -1,8 +1,13 @@
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using GhostFormatter.Abstractions.Model;
-using GhostFormatter.Core.Modals;
+using GhostFormatter.Core.Docs;
 using GhostFormatter.Core.Printer;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.Extensions.Logging;
+using DiagnosticSeverity = Microsoft.CodeAnalysis.DiagnosticSeverity;
 using GhostFormattingOptions = GhostFormatter.Abstractions.Configuration.FormattingOptions;
 
 namespace GhostFormatter.Core.Formatters.CSharp;
@@ -19,8 +24,7 @@ public sealed class CSharpFormatter : BaseFormatter
     protected override async Task<string> FormatCoreAsync(
         string text,
         GhostFormattingOptions options,
-        CancellationToken cancellationToken
-    )
+        CancellationToken cancellationToken)
     {
         var tree = CSharpSyntaxTree.ParseText(
             text,
@@ -32,7 +36,7 @@ public sealed class CSharpFormatter : BaseFormatter
 
         foreach (var diagnostic in tree.GetDiagnostics())
         {
-            if (diagnostic.Severity == Microsoft.CodeAnalysis.DiagnosticSeverity.Error)
+            if (diagnostic.Severity == DiagnosticSeverity.Error)
             {
                 // We still attempt to format invalid/incomplete code (format-on-type / format-on
                 // -save both routinely hand us a transiently-invalid buffer), but we log so callers
@@ -60,11 +64,7 @@ public sealed class CSharpFormatter : BaseFormatter
         );
 
         var visitorOptions = new CSharpDocVisitorOptions(
-            ThrowOnUnsupportedSyntax: TryGetOption(
-                options,
-                "ThrowOnUnsupportedSyntax",
-                DefaultThrowOnUnsupported
-            )
+            ThrowOnUnsupportedSyntax: TryGetOption(options, "ThrowOnUnsupportedSyntax", DefaultThrowOnUnsupported)
         );
 
         var visitor = new CSharpDocVisitor(visitorOptions);
@@ -78,9 +78,9 @@ public sealed class CSharpFormatter : BaseFormatter
         {
             Logger.LogWarning(
                 ex,
-                "CSharpFormatter: encountered unsupported syntax ({Kind}) at {Location}; "
-                    + "falling back is disabled for this run so the coverage gap is visible instead "
-                    + "of silently emitting raw, unformatted text.",
+                "CSharpFormatter: encountered unsupported syntax ({Kind}) at {Location}; " +
+                    "falling back is disabled for this run so the coverage gap is visible instead " +
+                    "of silently emitting raw, unformatted text.",
                 ex.SyntaxKind,
                 ex.Location
             );
@@ -105,11 +105,7 @@ public sealed class CSharpFormatter : BaseFormatter
     /// </summary>
     private const bool DefaultThrowOnUnsupported = true;
 
-    private static T TryGetOption<T>(
-        GhostFormattingOptions options,
-        string propertyName,
-        T fallback
-    )
+    private static T TryGetOption<T>(GhostFormattingOptions options, string propertyName, T fallback)
     {
         var prop = typeof(GhostFormattingOptions).GetProperty(propertyName);
         if (prop == null || !typeof(T).IsAssignableFrom(prop.PropertyType))

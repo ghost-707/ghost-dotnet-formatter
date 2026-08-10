@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using static GhostFormatter.Core.Docs.Docs;
-using Doc = GhostFormatter.Core.Modals.Doc;
+using Doc = GhostFormatter.Core.Docs.Doc;
 
 namespace GhostFormatter.Core.Formatters.CSharp;
 

@@ -6,15 +6,19 @@ namespace GhostFormatter.Core.Configuration;
 /// Parses .editorconfig files and returns applicable settings for a given file path.
 /// Implements a simplified .editorconfig parser that handles common properties.
 /// </summary>
-internal sealed class EditorConfigParser(ILogger logger)
+internal sealed class EditorConfigParser
 {
+    private readonly ILogger _logger;
+
+    public EditorConfigParser(ILogger logger)
+    {
+        _logger = logger;
+    }
+
     /// <summary>
     /// Parses .editorconfig files up the directory tree and returns merged settings.
     /// </summary>
-    public Task<EditorConfigSettings> ParseAsync(
-        string filePath,
-        CancellationToken cancellationToken = default
-    )
+    public Task<EditorConfigSettings> ParseAsync(string filePath, CancellationToken cancellationToken = default)
     {
         var settings = new EditorConfigSettings();
         var directory = Path.GetDirectoryName(Path.GetFullPath(filePath));
@@ -41,10 +45,8 @@ internal sealed class EditorConfigParser(ILogger logger)
 
                 // Check if this is a root config
                 var content = File.ReadAllText(configPath);
-                if (
-                    content.Contains("root = true", StringComparison.OrdinalIgnoreCase)
-                    || content.Contains("root=true", StringComparison.OrdinalIgnoreCase)
-                )
+                if (content.Contains("root = true", StringComparison.OrdinalIgnoreCase) ||
+                    content.Contains("root=true", StringComparison.OrdinalIgnoreCase))
                 {
                     isRoot = true;
                 }
@@ -67,7 +69,7 @@ internal sealed class EditorConfigParser(ILogger logger)
             }
             catch (Exception ex)
             {
-                logger.LogWarning(ex, "Error parsing .editorconfig at {Path}", configPath);
+                _logger.LogWarning(ex, "Error parsing .editorconfig at {Path}", configPath);
             }
         }
 
@@ -92,7 +94,10 @@ internal sealed class EditorConfigParser(ILogger logger)
             // Section header
             if (line.StartsWith('[') && line.EndsWith(']'))
             {
-                currentSection = new EditorConfigSection { Glob = line[1..^1].Trim() };
+                currentSection = new EditorConfigSection
+                {
+                    Glob = line[1..^1].Trim()
+                };
                 sections.Add(currentSection);
                 continue;
             }
@@ -114,8 +119,7 @@ internal sealed class EditorConfigParser(ILogger logger)
         EditorConfigSettings settings,
         List<EditorConfigSection> sections,
         string filePath,
-        string? extension
-    )
+        string? extension)
     {
         foreach (var section in sections)
         {
@@ -149,9 +153,7 @@ internal sealed class EditorConfigParser(ILogger logger)
                 // Handle brace expansion: *.{cs,fs,razor}
                 var inner = globExt[(globExt.IndexOf('{') + 1)..globExt.IndexOf('}')];
                 var extensions = inner.Split(',').Select(e => "." + e.Trim());
-                return extensions.Any(e =>
-                    string.Equals(extension, e, StringComparison.OrdinalIgnoreCase)
-                );
+                return extensions.Any(e => string.Equals(extension, e, StringComparison.OrdinalIgnoreCase));
             }
 
             return string.Equals(extension, globExt, StringComparison.OrdinalIgnoreCase);
@@ -176,7 +178,7 @@ internal sealed class EditorConfigParser(ILogger logger)
                 {
                     "tab" => IndentStyleValue.Tab,
                     "space" => IndentStyleValue.Space,
-                    _ => null,
+                    _ => null
                 };
                 break;
 
@@ -186,7 +188,7 @@ internal sealed class EditorConfigParser(ILogger logger)
                     "lf" => EndOfLineValue.Lf,
                     "crlf" => EndOfLineValue.CrLf,
                     "cr" => EndOfLineValue.Cr,
-                    _ => null,
+                    _ => null
                 };
                 break;
 
@@ -227,15 +229,5 @@ internal sealed class EditorConfigSettings
     public int? MaxLineLength { get; set; }
 }
 
-internal enum IndentStyleValue
-{
-    Space,
-    Tab,
-}
-
-internal enum EndOfLineValue
-{
-    Lf,
-    CrLf,
-    Cr,
-}
+internal enum IndentStyleValue { Space, Tab }
+internal enum EndOfLineValue { Lf, CrLf, Cr }

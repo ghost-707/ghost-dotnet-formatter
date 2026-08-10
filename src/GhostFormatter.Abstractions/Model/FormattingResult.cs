@@ -15,8 +15,7 @@ public sealed class FormattingResult
     public string OriginalText { get; }
 
     /// <summary>Gets a value indicating whether the text was modified.</summary>
-    public bool WasModified =>
-        Success && !string.Equals(OriginalText, FormattedText, StringComparison.Ordinal);
+    public bool WasModified => Success && !string.Equals(OriginalText, FormattedText, StringComparison.Ordinal);
 
     /// <summary>Gets diagnostics produced during formatting.</summary>
     public IReadOnlyList<FormattingDiagnostic> Diagnostics { get; }
@@ -29,8 +28,7 @@ public sealed class FormattingResult
         string? formattedText,
         bool success,
         IReadOnlyList<FormattingDiagnostic> diagnostics,
-        TimeSpan elapsed
-    )
+        TimeSpan elapsed)
     {
         OriginalText = originalText;
         FormattedText = formattedText;
@@ -44,32 +42,28 @@ public sealed class FormattingResult
         string originalText,
         string formattedText,
         TimeSpan elapsed,
-        IReadOnlyList<FormattingDiagnostic>? diagnostics = null
-    )
+        IReadOnlyList<FormattingDiagnostic>? diagnostics = null)
     {
         return new FormattingResult(
             originalText,
             formattedText,
             success: true,
-            diagnostics ?? [],
-            elapsed
-        );
+            diagnostics ?? Array.Empty<FormattingDiagnostic>(),
+            elapsed);
     }
 
     /// <summary>Creates a failed result.</summary>
     public static FormattingResult Failed(
         string originalText,
         TimeSpan elapsed,
-        IReadOnlyList<FormattingDiagnostic> diagnostics
-    )
+        IReadOnlyList<FormattingDiagnostic> diagnostics)
     {
         return new FormattingResult(
             originalText,
             formattedText: null,
             success: false,
             diagnostics,
-            elapsed
-        );
+            elapsed);
     }
 
     /// <summary>Creates a result where no changes were needed.</summary>
@@ -79,8 +73,7 @@ public sealed class FormattingResult
             text,
             text,
             success: true,
-            [],
-            elapsed
-        );
+            Array.Empty<FormattingDiagnostic>(),
+            elapsed);
     }
 }

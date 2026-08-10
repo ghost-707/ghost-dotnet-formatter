@@ -8,6 +8,9 @@ public enum Language
     /// <summary>C# source files (.cs).</summary>
     CSharp,
 
+    /// <summary>F# source files (.fs, .fsi, .fsx).</summary>
+    FSharp,
+
     /// <summary>Razor view files (.cshtml, .razor).</summary>
     Razor,
 
