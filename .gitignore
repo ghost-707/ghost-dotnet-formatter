@@ -28,7 +28,6 @@ artifacts/
 
 ## Visual Studio
 .vs/
-*.vsix
 *.rsuser
 *.csproj.user
 
