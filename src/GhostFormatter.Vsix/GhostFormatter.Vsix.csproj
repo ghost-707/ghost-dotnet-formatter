@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--
+      net8.0-windows8.0 (not net10.0-windows) so this loads in both VS 2022 17.9+ and
+      VS 2026 — net10.0 can only be targeted from VS 2026. The "windows8.0" suffix (not
+      just "windows") is what Microsoft.VisualStudio.Extensibility.Sdk's own template uses.
+    -->
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>GhostFormatter.Vsix</RootNamespace>
+    <AssemblyName>GhostFormatter.Vsix</AssemblyName>
+    <Description>ghost-dotnet-formatter Visual Studio Extension</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GhostFormatter.Abstractions\GhostFormatter.Abstractions.csproj" />
+    <ProjectReference Include="..\GhostFormatter.Core\GhostFormatter.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      Single meta-package, matching what VS's own "VisualStudio.Extensibility Extension"
+      project template references — this is what actually wires up the correct build
+      targets/packaging pipeline. The separate "Microsoft.VisualStudio.Extensibility"
+      package we had before was the wrong reference and is the likely root cause of the
+      VSSDK1309 packaging errors.
+    -->
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.14.40608" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.14.40608" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".vsextension\string-resources.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

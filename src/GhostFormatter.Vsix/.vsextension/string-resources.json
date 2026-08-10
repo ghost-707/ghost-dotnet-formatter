@@ -1,0 +1,15 @@
+{
+  "GhostFormatter.FormatDocument": "Format Document (ghost-dotnet-formatter)",
+  "GhostFormatter.FormatSelection": "Format Selection (ghost-dotnet-formatter)",
+  "GhostFormatter.FormatSolution": "Format Solution (ghost-dotnet-formatter)",
+
+  "GhostFormatter.Settings.Category.DisplayName": "ghost-dotnet-formatter",
+  "GhostFormatter.Settings.IndentSize.DisplayName": "Indent size",
+  "GhostFormatter.Settings.IndentSize.Description": "Number of spaces used per indentation level when UseTabs is disabled.",
+  "GhostFormatter.Settings.UseTabs.DisplayName": "Use tabs instead of spaces",
+  "GhostFormatter.Settings.UseTabs.Description": "Indent using tab characters instead of spaces.",
+  "GhostFormatter.Settings.MaxLineLength.DisplayName": "Maximum line length",
+  "GhostFormatter.Settings.MaxLineLength.Description": "Preferred maximum line length used for wrapping decisions.",
+  "GhostFormatter.Settings.FormatOnSave.DisplayName": "Format on Save",
+  "GhostFormatter.Settings.FormatOnSave.Description": "Automatically format supported files when they are saved. Requires the in-proc bridge component; see docs/developer-guide.md."
+}
