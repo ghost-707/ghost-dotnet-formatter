@@ -6,21 +6,17 @@ namespace GhostFormatter.Core.Configuration;
 /// <summary>
 /// Resolves formatting options by merging global defaults with .editorconfig settings.
 /// </summary>
-public sealed class OptionsProvider : IOptionsProvider
+/// <remarks>Initializes a new instance of the <see cref="OptionsProvider"/> class.</remarks>
+public sealed class OptionsProvider(ILogger<OptionsProvider> logger) : IOptionsProvider
 {
     private readonly FormattingOptions _defaults = new();
-    private readonly ILogger<OptionsProvider> _logger;
-    private readonly EditorConfigParser _editorConfigParser;
-
-    /// <summary>Initializes a new instance of the <see cref="OptionsProvider"/> class.</summary>
-    public OptionsProvider(ILogger<OptionsProvider> logger)
-    {
-        _logger = logger;
-        _editorConfigParser = new EditorConfigParser(logger);
-    }
+    private readonly EditorConfigParser _editorConfigParser = new(logger);
 
     /// <inheritdoc />
-    public async Task<FormattingOptions> GetOptionsAsync(string? filePath, CancellationToken cancellationToken = default)
+    public async Task<FormattingOptions> GetOptionsAsync(
+        string? filePath,
+        CancellationToken cancellationToken = default
+    )
     {
         var options = _defaults.Clone();
 
@@ -28,12 +24,19 @@ public sealed class OptionsProvider : IOptionsProvider
         {
             try
             {
-                var editorConfigOptions = await _editorConfigParser.ParseAsync(filePath, cancellationToken);
+                var editorConfigOptions = await _editorConfigParser.ParseAsync(
+                    filePath,
+                    cancellationToken
+                );
                 MergeEditorConfig(options, editorConfigOptions);
             }
             catch (Exception ex)
             {
-                _logger.LogWarning(ex, "Failed to parse .editorconfig for {FilePath}, using defaults", filePath);
+                logger.LogWarning(
+                    ex,
+                    "Failed to parse .editorconfig for {FilePath}, using defaults",
+                    filePath
+                );
             }
         }
 
@@ -58,7 +61,7 @@ public sealed class OptionsProvider : IOptionsProvider
             {
                 EndOfLineValue.Lf => LineEndingStyle.Lf,
                 EndOfLineValue.CrLf => LineEndingStyle.CrLf,
-                _ => LineEndingStyle.Lf
+                _ => LineEndingStyle.Lf,
             };
         }
 

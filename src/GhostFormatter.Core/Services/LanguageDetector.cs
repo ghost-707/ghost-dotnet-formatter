@@ -11,9 +11,6 @@ public sealed class LanguageDetector
     {
         [".cs"] = Language.CSharp,
         [".csx"] = Language.CSharp,
-        [".fs"] = Language.FSharp,
-        [".fsi"] = Language.FSharp,
-        [".fsx"] = Language.FSharp,
         [".cshtml"] = Language.Razor,
         [".razor"] = Language.Razor,
         [".html"] = Language.Html,

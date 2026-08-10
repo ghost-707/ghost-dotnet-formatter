@@ -1,7 +1,6 @@
 using GhostFormatter.Abstractions.Model;
-using GhostFormatter.Core.Docs;
+using GhostFormatter.Core.Modals;
 using GhostFormatter.Core.Printer;
-using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.Extensions.Logging;
 using GhostFormattingOptions = GhostFormatter.Abstractions.Configuration.FormattingOptions;
