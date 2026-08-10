@@ -4,7 +4,6 @@ using GhostFormatter.Core.Configuration;
 using GhostFormatter.Core.Formatters;
 using GhostFormatter.Core.Formatters.CSharp;
 using GhostFormatter.Core.Formatters.Css;
-using GhostFormatter.Core.Formatters.FSharp;
 using GhostFormatter.Core.Formatters.Html;
 using GhostFormatter.Core.Formatters.JavaScript;
 using GhostFormatter.Core.Formatters.Json;
