@@ -39,7 +39,6 @@ public static class ServiceCollectionExtensions
 
         // Language formatters
         services.AddSingleton<ILanguageFormatter, CSharpFormatter>();
-        services.AddSingleton<ILanguageFormatter, FSharpFormatter>();
         services.AddSingleton<ILanguageFormatter, RazorFormatter>();
         services.AddSingleton<ILanguageFormatter, HtmlFormatter>();
         services.AddSingleton<ILanguageFormatter, CssFormatter>();
