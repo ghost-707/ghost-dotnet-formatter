@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using GhostFormatter.Abstractions.Model;
 using GhostFormatter.Core.Docs;
+using GhostFormatter.Core.Modals;
 using GhostFormatter.Core.Printer;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;

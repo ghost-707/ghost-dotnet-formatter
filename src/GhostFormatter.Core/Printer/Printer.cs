@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
 using System.Text;
-using GhostFormatter.Core.Docs;
+using GhostFormatter.Core.Modals;
 
 namespace GhostFormatter.Core.Printer;
 

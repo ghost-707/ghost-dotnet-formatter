@@ -31,14 +31,13 @@ public abstract class BaseFormatter : ILanguageFormatter
     public async Task<FormattingResult> FormatAsync(
         FormattingRequest request,
         FormattingOptions options,
-        CancellationToken cancellationToken = default)
+        CancellationToken cancellationToken = default
+    )
     {
         var sw = Stopwatch.StartNew();
-
         try
         {
             cancellationToken.ThrowIfCancellationRequested();
-
             // Pre-flight validation
             var diagnostics = new List<FormattingDiagnostic>();
             if (!await ValidateInputAsync(request.Text, diagnostics, cancellationToken))
@@ -46,25 +45,24 @@ public abstract class BaseFormatter : ILanguageFormatter
                 sw.Stop();
                 return FormattingResult.Failed(request.Text, sw.Elapsed, diagnostics);
             }
-
             // Normalize line endings for processing
             var normalized = NormalizeLineEndings(request.Text);
-
             // Apply formatting
             var formatted = request.Selection.HasValue
-                ? await FormatSelectionCoreAsync(normalized, request.Selection.Value, options, cancellationToken)
+                ? await FormatSelectionCoreAsync(
+                    normalized,
+                    request.Selection.Value,
+                    options,
+                    cancellationToken
+                )
                 : await FormatCoreAsync(normalized, options, cancellationToken);
-
             // Apply final normalizations
             formatted = ApplyFinalNormalizations(formatted, options);
-
             sw.Stop();
-
             if (string.Equals(request.Text, formatted, StringComparison.Ordinal))
             {
                 return FormattingResult.Unchanged(request.Text, sw.Elapsed);
             }
-
             return FormattingResult.Succeeded(request.Text, formatted, sw.Elapsed, diagnostics);
         }
         catch (OperationCanceledException)
@@ -75,19 +73,19 @@ public abstract class BaseFormatter : ILanguageFormatter
         {
             sw.Stop();
             Logger.LogError(ex, "Formatting failed for {Language}", Language);
-
             return FormattingResult.Failed(
                 request.Text,
                 sw.Elapsed,
-                [FormattingDiagnostic.Error($"Formatting failed: {ex.Message}", code: "GF0001")]);
+                [FormattingDiagnostic.Error($"Formatting failed: {ex.Message}", code: "GF0001")]
+            );
         }
     }
 
     /// <inheritdoc />
-    public virtual Task<bool> CanFormatAsync(string text, CancellationToken cancellationToken = default)
-    {
-        return Task.FromResult(!string.IsNullOrEmpty(text));
-    }
+    public virtual Task<bool> CanFormatAsync(
+        string text,
+        CancellationToken cancellationToken = default
+    ) => Task.FromResult(!string.IsNullOrEmpty(text));
 
     /// <summary>
     /// Core formatting logic to be implemented by each language formatter.
@@ -95,7 +93,8 @@ public abstract class BaseFormatter : ILanguageFormatter
     protected abstract Task<string> FormatCoreAsync(
         string text,
         FormattingOptions options,
-        CancellationToken cancellationToken);
+        CancellationToken cancellationToken
+    );
 
     /// <summary>
     /// Formats a selection within a document. By default, formats the full document.
@@ -105,11 +104,8 @@ public abstract class BaseFormatter : ILanguageFormatter
         string text,
         TextSpan selection,
         FormattingOptions options,
-        CancellationToken cancellationToken)
-    {
-        // Default: format the entire document
-        return FormatCoreAsync(text, options, cancellationToken);
-    }
+        CancellationToken cancellationToken
+    ) => FormatCoreAsync(text, options, cancellationToken);
 
     /// <summary>
     /// Validates the input text before formatting.
@@ -118,14 +114,14 @@ public abstract class BaseFormatter : ILanguageFormatter
     protected virtual Task<bool> ValidateInputAsync(
         string text,
         List<FormattingDiagnostic> diagnostics,
-        CancellationToken cancellationToken)
+        CancellationToken cancellationToken
+    )
     {
         if (string.IsNullOrEmpty(text))
         {
             diagnostics.Add(FormattingDiagnostic.Warning("Input text is empty.", code: "GF0002"));
             return Task.FromResult(false);
         }
-
         return Task.FromResult(true);
     }
 
@@ -148,33 +144,31 @@ public abstract class BaseFormatter : ILanguageFormatter
             }
             text = string.Join('\n', lines);
         }
-
         // Collapse consecutive blank lines
         if (options.MaxConsecutiveBlankLines >= 0)
         {
             text = CollapseBlankLines(text, options.MaxConsecutiveBlankLines);
         }
-
         // Apply line ending style
         text = options.LineEnding switch
         {
             LineEndingStyle.CrLf => text.Replace("\n", "\r\n"),
             LineEndingStyle.Lf => text,
             LineEndingStyle.Preserve => text,
-            _ => text
+            _ => text,
         };
-
         // Final newline
         var newlineChar = options.LineEnding == LineEndingStyle.CrLf ? "\r\n" : "\n";
         if (options.InsertFinalNewline && !text.EndsWith(newlineChar, StringComparison.Ordinal))
         {
             text += newlineChar;
         }
-        else if (!options.InsertFinalNewline && text.EndsWith(newlineChar, StringComparison.Ordinal))
+        else if (
+            !options.InsertFinalNewline && text.EndsWith(newlineChar, StringComparison.Ordinal)
+        )
         {
             text = text.TrimEnd('\r', '\n');
         }
-
         return text;
     }
 
@@ -183,7 +177,6 @@ public abstract class BaseFormatter : ILanguageFormatter
         var lines = text.Split('\n');
         var result = new List<string>(lines.Length);
         var consecutiveBlanks = 0;
-
         foreach (var line in lines)
         {
             if (string.IsNullOrWhiteSpace(line))
@@ -200,7 +193,6 @@ public abstract class BaseFormatter : ILanguageFormatter
                 result.Add(line);
             }
         }
-
         return string.Join('\n', result);
     }
 
@@ -211,7 +203,6 @@ public abstract class BaseFormatter : ILanguageFormatter
         {
             return new string('\t', level);
         }
-
         return new string(' ', level * options.IndentSize);
     }
 }

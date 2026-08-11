@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+using GhostFormatter.Core.Modals;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using static GhostFormatter.Core.Docs.Docs;
-using Doc = GhostFormatter.Core.Docs.Doc;
 
 namespace GhostFormatter.Core.Formatters.CSharp;
 
@@ -171,7 +171,7 @@ public class CSharpDocVisitor : CSharpSyntaxVisitor<Doc>
 
         parts.Add(VisitR(node.Name!));
         parts.Add(";");
-        return Concat(parts.ToArray());
+        return Concat([.. parts]);
     }
 
     public override Doc VisitFileScopedNamespaceDeclaration(
@@ -215,7 +215,7 @@ public class CSharpDocVisitor : CSharpSyntaxVisitor<Doc>
                 )
             );
 
-        return Concat(parts.ToArray());
+        return Concat([.. parts]);
     }
 
     public override Doc VisitNamespaceDeclaration(NamespaceDeclarationSyntax node)
