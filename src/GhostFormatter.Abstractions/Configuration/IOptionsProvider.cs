@@ -12,5 +12,8 @@ public interface IOptionsProvider
     /// <param name="filePath">The file path for context-sensitive resolution, or <c>null</c> for defaults.</param>
     /// <param name="cancellationToken">A cancellation token.</param>
     /// <returns>The resolved formatting options.</returns>
-    Task<FormattingOptions> GetOptionsAsync(string? filePath, CancellationToken cancellationToken = default);
+    Task<FormattingOptions> GetOptionsAsync(
+        string? filePath,
+        CancellationToken cancellationToken = default
+    );
 }

@@ -1,4 +1,4 @@
-using GhostFormatter.Abstractions.Configuration;
+using GhostFormatter.Abstractions.Enums;
 
 namespace GhostFormatter.Core.Services;
 

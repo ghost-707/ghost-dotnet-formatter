@@ -1,5 +1,5 @@
+using GhostFormatter.Abstractions.Enums;
 using GhostFormatter.Abstractions.Formatters;
-using GhostFormatter.Abstractions.Model;
 using Microsoft.Extensions.Logging;
 
 namespace GhostFormatter.Core.Formatters;

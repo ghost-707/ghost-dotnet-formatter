@@ -1,3 +1,5 @@
+using GhostFormatter.Abstractions.Enums;
+
 namespace GhostFormatter.Abstractions.Configuration;
 
 /// <summary>
@@ -106,61 +108,9 @@ public sealed class FormattingOptions
             CSharp = CSharp.Clone(),
             Json = Json.Clone(),
             Sql = Sql.Clone(),
-            Html = Html.Clone()
+            Html = Html.Clone(),
         };
     }
-}
-
-/// <summary>Brace placement style.</summary>
-public enum BraceStyle
-{
-    /// <summary>Opening brace on a new line (C# default).</summary>
-    Allman,
-
-    /// <summary>Opening brace on the same line (K&amp;R style).</summary>
-    KAndR,
-
-    /// <summary>Opening brace on the same line, closing brace on its own line.</summary>
-    Stroustrup
-}
-
-/// <summary>Line ending style.</summary>
-public enum LineEndingStyle
-{
-    /// <summary>Unix-style line feed.</summary>
-    Lf,
-
-    /// <summary>Windows-style carriage return + line feed.</summary>
-    CrLf,
-
-    /// <summary>Preserve existing line endings.</summary>
-    Preserve
-}
-
-/// <summary>Namespace declaration style for C#.</summary>
-public enum NamespaceStyle
-{
-    /// <summary>File-scoped namespace (C# 10+).</summary>
-    FileScoped,
-
-    /// <summary>Block-scoped namespace (traditional).</summary>
-    BlockScoped,
-
-    /// <summary>Preserve existing style.</summary>
-    Preserve
-}
-
-/// <summary>Trailing comma behavior.</summary>
-public enum TrailingCommaStyle
-{
-    /// <summary>Do not add trailing commas.</summary>
-    None,
-
-    /// <summary>Add trailing commas in multi-line constructs.</summary>
-    MultiLine,
-
-    /// <summary>Preserve existing trailing commas.</summary>
-    Preserve
 }
 
 /// <summary>C#-specific formatting options.</summary>
@@ -231,14 +181,4 @@ public sealed class HtmlFormattingOptions
 
     /// <summary>Creates a deep clone.</summary>
     public HtmlFormattingOptions Clone() => (HtmlFormattingOptions)MemberwiseClone();
-}
-
-/// <summary>Comma placement in SQL lists.</summary>
-public enum CommaPlacement
-{
-    /// <summary>Commas at the end of lines.</summary>
-    Trailing,
-
-    /// <summary>Commas at the beginning of lines.</summary>
-    Leading
 }

@@ -1,13 +1,14 @@
 using System.Text;
 using System.Text.RegularExpressions;
-using GhostFormatter.Abstractions.Configuration;
-using GhostFormatter.Abstractions.Formatters;
+using GhostFormatter.Abstractions.Enums;
 using GhostFormatter.Abstractions.Model;
+using Microsoft.Extensions.Logging;
 using GhostFormatter.Core.Formatters.Css;
 using GhostFormatter.Core.Formatters.JavaScript;
-using Microsoft.Extensions.Logging;
+using GhostFormatter.Core.Formatters;
+using GhostFormatter.Abstractions.Configuration;
 
-namespace GhostFormatter.Core.Formatters.Razor;
+namespace GhostFormatter.Abstractions.Formatters.Razor;
 
 /// <summary>
 /// Formats Razor (.cshtml, .razor) files containing a mix of HTML, C#, CSS, and JavaScript.

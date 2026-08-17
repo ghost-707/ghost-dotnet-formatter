@@ -1,4 +1,4 @@
-namespace GhostFormatter.Core.Modals;
+namespace GhostFormatter.Abstractions.Enums;
 
 public enum LineKind
 {

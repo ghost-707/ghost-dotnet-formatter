@@ -1,4 +1,4 @@
-namespace GhostFormatter.Abstractions.Model;
+namespace GhostFormatter.Abstractions.Enums;
 
 /// <summary>
 /// Enumerates all languages supported by the ghost-dotnet-formatter.

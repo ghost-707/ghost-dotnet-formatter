@@ -228,6 +228,3 @@ internal sealed class EditorConfigSettings
     public bool? TrimTrailingWhitespace { get; set; }
     public int? MaxLineLength { get; set; }
 }
-
-internal enum IndentStyleValue { Space, Tab }
-internal enum EndOfLineValue { Lf, CrLf, Cr }

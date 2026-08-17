@@ -2,7 +2,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using GhostFormatter.Abstractions.Configuration;
-using GhostFormatter.Abstractions.Model;
+using GhostFormatter.Abstractions.Enums;
 using Microsoft.Extensions.Logging;
 
 namespace GhostFormatter.Core.Formatters.Xml;

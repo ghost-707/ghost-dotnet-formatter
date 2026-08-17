@@ -1,4 +1,5 @@
 using System.Text;
+using GhostFormatter.Abstractions.Enums;
 using GhostFormatter.Core.Modals;
 
 namespace GhostFormatter.Core.Printer;
@@ -10,12 +11,6 @@ public sealed record DocPrinterOptions(
 )
 {
     public static readonly DocPrinterOptions Default = new();
-}
-
-internal enum Mode
-{
-    Flat,
-    Break,
 }
 
 internal readonly record struct Cmd(int Indent, Mode Mode, Doc Doc);

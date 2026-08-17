@@ -1,14 +1,14 @@
 using GhostFormatter.Abstractions.Configuration;
 using GhostFormatter.Abstractions.Formatters;
+using GhostFormatter.Abstractions.Formatters.Html;
+using GhostFormatter.Abstractions.Formatters.Razor;
 using GhostFormatter.Core.Configuration;
 using GhostFormatter.Core.Formatters;
 using GhostFormatter.Core.Formatters.CSharp;
 using GhostFormatter.Core.Formatters.Css;
-using GhostFormatter.Core.Formatters.Html;
 using GhostFormatter.Core.Formatters.JavaScript;
 using GhostFormatter.Core.Formatters.Json;
 using GhostFormatter.Core.Formatters.Markdown;
-using GhostFormatter.Core.Formatters.Razor;
 using GhostFormatter.Core.Formatters.Sql;
 using GhostFormatter.Core.Formatters.Xml;
 using GhostFormatter.Core.Formatters.Yaml;

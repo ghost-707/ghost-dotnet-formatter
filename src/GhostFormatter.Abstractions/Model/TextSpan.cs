@@ -17,10 +17,8 @@ public readonly record struct TextSpan(int Start, int Length)
     public bool Contains(int position) => position >= Start && position < End;
 
     /// <summary>Determines whether the span overlaps with another span.</summary>
-    public bool Overlaps(TextSpan other) =>
-        Start < other.End && other.Start < End;
+    public bool Overlaps(TextSpan other) => Start < other.End && other.Start < End;
 
     /// <summary>Creates a span from start and end positions.</summary>
-    public static TextSpan FromBounds(int start, int end) =>
-        new(start, end - start);
+    public static TextSpan FromBounds(int start, int end) => new(start, end - start);
 }

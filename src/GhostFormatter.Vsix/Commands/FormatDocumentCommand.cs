@@ -1,3 +1,4 @@
+using GhostFormatter.Abstractions.Enums;
 using GhostFormatter.Abstractions.Formatters;
 using GhostFormatter.Abstractions.Model;
 using Microsoft.VisualStudio.Extensibility;

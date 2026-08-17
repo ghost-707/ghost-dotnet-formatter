@@ -1,4 +1,4 @@
-namespace GhostFormatter.Abstractions.Model;
+namespace GhostFormatter.Abstractions.Enums;
 
 /// <summary>
 /// Defines the scope of a formatting operation.

@@ -1,4 +1,5 @@
 using GhostFormatter.Abstractions.Configuration;
+using GhostFormatter.Abstractions.Enums;
 using Microsoft.Extensions.Logging;
 
 namespace GhostFormatter.Core.Configuration;

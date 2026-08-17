@@ -1,3 +1,4 @@
+using GhostFormatter.Abstractions.Enums;
 using GhostFormatter.Core.Modals;
 
 namespace GhostFormatter.Core.Docs;

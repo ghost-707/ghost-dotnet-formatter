@@ -1,10 +1,11 @@
 using System.Text;
 using System.Text.RegularExpressions;
 using GhostFormatter.Abstractions.Configuration;
-using GhostFormatter.Abstractions.Model;
+using GhostFormatter.Abstractions.Enums;
+using GhostFormatter.Core.Formatters;
 using Microsoft.Extensions.Logging;
 
-namespace GhostFormatter.Core.Formatters.Html;
+namespace GhostFormatter.Abstractions.Formatters.Html;
 
 /// <summary>
 /// Formats HTML files with proper indentation and attribute wrapping.
