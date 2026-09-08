@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\xml\\xmlformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\xml\\xmlformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\razor\\razorreflectionaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\razor\\razorreflectionaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\razor\\razorformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\razor\\razorformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13A3B3C8-F9AF-D72E-451E-FF17B26EED2A}|src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.vsix\\commands\\formatdocumentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13A3B3C8-F9AF-D72E-451E-FF17B26EED2A}|src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|solutionrelative:src\\ghostformatter.vsix\\commands\\formatdocumentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\razor\\razordocvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\razor\\razordocvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\ghostformatter.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\ghostformatter.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\razor\\razorformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\razor\\razorformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\xml\\xmlformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\xml\\xmlformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\razor\\razorreflectionaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\razor\\razorreflectionaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\javascript\\javascriptformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\javascript\\javascriptformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\ghostformatter.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\ghostformatter.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\csharp\\csharpdocvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\html\\htmlformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\html\\htmlformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.core\\formatters\\javascript\\javascriptformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{55DB9AEF-8429-564F-E804-267F5700BFB1}|src\\GhostFormatter.Core\\GhostFormatter.Core.csproj|solutionrelative:src\\ghostformatter.core\\formatters\\javascript\\javascriptformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13A3B3C8-F9AF-D72E-451E-FF17B26EED2A}|src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|d:\\personal\\programming\\projects\\ghost-dotnet-formatter\\src\\ghostformatter.vsix\\commands\\formatdocumentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13A3B3C8-F9AF-D72E-451E-FF17B26EED2A}|src\\GhostFormatter.Vsix\\GhostFormatter.Vsix.csproj|solutionrelative:src\\ghostformatter.vsix\\commands\\formatdocumentcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,33 +90,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "FormatDocumentCommand.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Commands\\FormatDocumentCommand.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Vsix\\Commands\\FormatDocumentCommand.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Vsix\\Commands\\FormatDocumentCommand.cs",
               "RelativeToolTip": "src\\GhostFormatter.Vsix\\Commands\\FormatDocumentCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:14:30.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "JavaScriptFormatter.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\JavaScript\\JavaScriptFormatter.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\JavaScript\\JavaScriptFormatter.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\JavaScript\\JavaScriptFormatter.cs",
               "RelativeToolTip": "src\\GhostFormatter.Core\\Formatters\\JavaScript\\JavaScriptFormatter.cs",
-              "ViewState": "AgIAAOMBAAAAAAAAAAAiwPkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANoBAACAiDTxDgAiwOIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:14:51.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "HtmlFormatter.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Html\\HtmlFormatter.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\Html\\HtmlFormatter.cs",
@@ -129,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CssFormatter.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Css\\CssFormatter.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\Css\\CssFormatter.cs",
@@ -142,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CSharpFormatter.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpFormatter.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpFormatter.cs",
@@ -155,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CSharpDocVisitor.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpDocVisitor.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\CSharp\\CSharpDocVisitor.cs",
@@ -168,46 +168,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "XmlFormatter.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Xml\\XmlFormatter.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\Xml\\XmlFormatter.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Xml\\XmlFormatter.cs",
               "RelativeToolTip": "src\\GhostFormatter.Core\\Formatters\\Xml\\XmlFormatter.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAQwEkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:15:28.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RazorDocVisitor.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Razor\\RazorDocVisitor.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\Razor\\RazorDocVisitor.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Razor\\RazorDocVisitor.cs",
               "RelativeToolTip": "src\\GhostFormatter.Core\\Formatters\\Razor\\RazorDocVisitor.cs",
-              "ViewState": "AgIAAGYBAAAAAAAAAAAYwHYBAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAGsBAAAAH8EBLQERwHUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:29:13.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RazorFormatter.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Razor\\RazorFormatter.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\Razor\\RazorFormatter.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Razor\\RazorFormatter.cs",
               "RelativeToolTip": "src\\GhostFormatter.Core\\Formatters\\Razor\\RazorFormatter.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAApwEwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAADA+v////8vwAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:33:19.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "GhostFormatter.Core",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\GhostFormatter.Core.csproj",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\GhostFormatter.Core.csproj",
@@ -220,26 +220,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RazorReflectionAccess.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Razor\\RazorReflectionAccess.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\Formatters\\Razor\\RazorReflectionAccess.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\Formatters\\Razor\\RazorReflectionAccess.cs",
               "RelativeToolTip": "src\\GhostFormatter.Core\\Formatters\\Razor\\RazorReflectionAccess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAA45Yd4v8bwGIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:40:58.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ServiceCollectionExtensions.cs",
               "DocumentMoniker": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\ServiceCollectionExtensions.cs",
               "RelativeDocumentMoniker": "src\\GhostFormatter.Core\\ServiceCollectionExtensions.cs",
               "ToolTip": "D:\\Personal\\Programming\\Projects\\ghost-dotnet-formatter\\src\\GhostFormatter.Core\\ServiceCollectionExtensions.cs",
               "RelativeToolTip": "src\\GhostFormatter.Core\\ServiceCollectionExtensions.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAApwCQAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-08T14:49:06.156Z",
               "EditorCaption": ""
